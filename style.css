@@ -27,6 +27,7 @@
    }
    
    .card{
+
        height:auto;
        width:400px;
        background-color:#fff;
@@ -34,8 +35,6 @@
        padding:10px 20px;
        margin: 20px;
    }
-
-
 
 .hr {
   margin: 15px 0px 10px 0px;
@@ -277,6 +276,7 @@
        cursor:pointer;
        transition:all 0.5s;
        border: none;
+       font-family: b;
        margin: 15px 0px 12px 0px;
    }
    .button button:hover{
@@ -451,6 +451,8 @@
     transition:all 0.5s;
     border: none;
     margin-bottom: 20px;
+    font-family: b;
+
   }
 
   .twitter:hover {

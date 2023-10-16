@@ -23,6 +23,7 @@
        background-image: url(bodyBg.png);
        background-repeat: no-repeat;
        background-size: cover;
+       background-position: center;
    }
    
    .card{
@@ -268,7 +269,7 @@
    } 
    .button button{
        height:40px;
-       width:266px;
+       width:220px;
        background-color:#f22808;
        font-size:16px;
        color:#fff;
@@ -420,7 +421,7 @@
   .title {
     color: #f22808;
     font-family: b;
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .titleT {
@@ -550,8 +551,7 @@
 
   .wrapper{
     display: flex;
-    width: 66%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10px auto;
   }
   .wrapper .option{

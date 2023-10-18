@@ -1,102 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TEDxKFU</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-    <div class="container">              
-
-        <div class="card"> 
-            <form method="post" action="https://script.google.com/macros/s/AKfycbxns-28zmWM5I2QqcC3PMOT83KEVuAw6LLz8dbD8-zyUmmgRPceStLUzfrF0BXJoe2hQw/exec" name="MyGroup">
-
-            <div class="main active">
-                <div class="content">
-                   <h1 class="title"> <span class="story">🎙️أسمَع العَالم .. </span>قِصَّتك </h1>
-                </div>
-
-                <hr>
-                <div class="input-text">
-                    <input id="input" onblur="requiredField(this)" type="text" placeholder="الأسم الثلاثي " id="fullName" name="الأسم الثلاثي" require>
-                    <span>الأسم الثلاثي</span>
-                </div>
-
-                <div class="input-text">
-                  <input id="input" onblur="requiredField(this)" type="number" placeholder="رقم الجوال " id="phone" name="رقم الجوال" require>
-                  <span>رقم الجوال</span>
-              </div>
-
-              <div class="input-text">
-                <textarea id="input" onblur="requiredField(this)" type="text" placeholder=" أحكي لنا قصتك باختصار " id="textarea" name="من انت" require></textarea>
-                <span>قصتك باختصار</span>
-            </div>
-            <h1 class="titleT"><i class="fa-solid fa-user"></i> حالة المٌتقدم </h1>
-
-                <div class="wrapper">
-                  <input type="radio" name="طالب أو خريج" id="option-1" value="خريج" >
-                  <input type="radio" name="طالب أو خريج" id="option-2" value="طالب" >
-                    <label for="option-1" class="option option-1">
-                      <div class="dot"></div>
-                       <span><i class="fa-solid fa-graduation-cap"></i> خريج </span>
-                       </label>
-                    <label for="option-2" class="option option-2">
-                      <div class="dot"></div>
-                       <span><i class="fa-solid fa-book"></i> طالب </span>
-                    </label>
-                 </div>
-
-                <div class="button">
-                    <button type="submit" value="Submit" class="create-workspace">التسجيل</button>
-                </div>
-              
-            </div>
-    
-    </form>
-
-            <div class="main">
-               
-                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                </svg>
-                <div class="content">
-                   <h2 style="color: #f22808; font-family: r;">شكرًا، وصلتنا مشاركتك</h2>
-<p>
-سيتم التواصل معكم قريبًا
-
-</p>                </div>
-
-                <div class="finish">
-                  <a href="https://twitter.com/KFUTEDx" ><button class="twitter">الإطلاع على جديدنا</button></a>
-              </div>
-                
-            </div>
-           
-            
-        </div>
-      </div>
-    </div>
-  </form>
-
-      <script src="script.js"></script>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxns-28zmWM5I2QqcC3PMOT83KEVuAw6LLz8dbD8-zyUmmgRPceStLUzfrF0BXJoe2hQw/exec'
-        const form = document.forms['MyGroup']
-        
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          // .then(response => alert("Thank you! your form is submitted successfully." ))
-          // .then(() => {  window.location.reload(); })
-          // .catch(error => console.error('Error!', error.message))
-        })
-        </script>
-
-
-</body>
-</html>
